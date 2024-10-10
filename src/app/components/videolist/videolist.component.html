@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Video List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Video Name" [(ngModel)]="videoName"/>
+  <button type="button" class="btn btn-primary" (click)="addVideo()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let video of videoList">
+      {{video}}
+    </li>
+  </ul>
+</div>

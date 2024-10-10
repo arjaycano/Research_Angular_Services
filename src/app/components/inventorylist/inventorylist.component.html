@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Inventory List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Inventory Name" [(ngModel)]="inventoryName"/>
+  <button type="button" class="btn btn-primary" (click)="addInventory()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let inventory of inventoryList">
+      {{inventory}}
+    </li>
+  </ul>
+</div>

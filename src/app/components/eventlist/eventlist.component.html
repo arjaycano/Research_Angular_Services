@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Event List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Event Name" [(ngModel)]="eventName"/>
+  <button type="button" class="btn btn-primary" (click)="addEvent()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let event of eventList">
+      {{event}}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Book List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Book Name" [(ngModel)]="bookName"/>
+  <button type="button" class="btn btn-primary" (click)="addBook()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let book of bookList">
+      {{book}}
+    </li>
+  </ul>
+</div>

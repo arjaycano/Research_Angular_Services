@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Meal Plan List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Meal Plan Name" [(ngModel)]="mealPlanName"/>
+  <button type="button" class="btn btn-primary" (click)="addMealPlan()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let mealPlan of mealPlanList">
+      {{mealPlan}}
+    </li>
+  </ul>
+</div>

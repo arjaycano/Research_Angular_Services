@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Animal List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Animal Name" [(ngModel)]="animalName"/>
+  <button type="button" class="btn btn-primary" (click)="addAnimal()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let animal of animalList">
+      {{animal}}
+    </li>
+  </ul>
+</div>

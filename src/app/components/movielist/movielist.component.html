@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Movie List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Movie Name" [(ngModel)]="movieName"/>
+  <button type="button" class="btn btn-primary" (click)="addMovie()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let movie of movieList">
+      {{movie}}
+    </li>
+  </ul>
+</div>

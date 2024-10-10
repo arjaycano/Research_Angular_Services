@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Budget List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Budget Name" [(ngModel)]="budgetName"/>
+  <button type="button" class="btn btn-primary" (click)="addBudget()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let budget of budgetList">
+      {{budget}}
+    </li>
+  </ul>
+</div>

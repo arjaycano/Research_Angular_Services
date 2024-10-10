@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Destination List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Destination Name" [(ngModel)]="destinationName"/>
+  <button type="button" class="btn btn-primary" (click)="addDestination()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let destination of destinationList">
+      {{destination}}
+    </li>
+  </ul>
+</div>

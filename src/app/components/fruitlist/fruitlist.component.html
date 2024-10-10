@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Fruit List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Fruit Name" [(ngModel)]="fruitName"/>
+  <button type="button" class="btn btn-primary" (click)="addFruit()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let fruit of fruitList">
+      {{fruit}}
+    </li>
+  </ul>
+</div>

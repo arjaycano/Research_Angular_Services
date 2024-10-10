@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Tool List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Tool Name" [(ngModel)]="toolName"/>
+  <button type="button" class="btn btn-primary" (click)="addTool()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let tool of toolList">
+      {{tool}}
+    </li>
+  </ul>
+</div>

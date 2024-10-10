@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Laptop List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Laptop Name" [(ngModel)]="laptopName"/>
+  <button type="button" class="btn btn-primary" (click)="addLaptop()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let laptop of laptopList">
+      {{laptop}}
+    </li>
+  </ul>
+</div>

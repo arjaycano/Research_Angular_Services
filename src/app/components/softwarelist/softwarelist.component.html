@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Software List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Software Name" [(ngModel)]="softwareName"/>
+  <button type="button" class="btn btn-primary" (click)="addSoftware()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let software of softwareList">
+      {{software}}
+    </li>
+  </ul>
+</div>

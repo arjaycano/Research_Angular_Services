@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Sports List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Sports Name" [(ngModel)]="sportName"/>
+  <button type="button" class="btn btn-primary" (click)="addSport()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let sport of sportList">
+      {{sport}}
+    </li>
+  </ul>
+</div>

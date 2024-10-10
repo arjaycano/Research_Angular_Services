@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>City List!</h1>
+  <br>
+  <input type="text" placeholder="Enter City Name" [(ngModel)]="cityName"/>
+  <button type="button" class="btn btn-primary" (click)="addCity()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let city of cityList">
+      {{city}}
+    </li>
+  </ul>
+</div>

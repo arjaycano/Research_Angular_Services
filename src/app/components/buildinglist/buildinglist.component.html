@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Building List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Building Name" [(ngModel)]="buildingName"/>
+  <button type="button" class="btn btn-primary" (click)="addBuilding()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let building of buildingList">
+      {{building}}
+    </li>
+  </ul>
+</div>

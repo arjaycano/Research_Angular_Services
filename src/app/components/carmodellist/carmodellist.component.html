@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Car Model List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Car Model Name" [(ngModel)]="carModelName"/>
+  <button type="button" class="btn btn-primary" (click)="addCarModel()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let carModel of carModelList">
+      {{carModel}}
+    </li>
+  </ul>
+</div>

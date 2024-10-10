@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Lecture List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Lecture Name" [(ngModel)]="lectureName"/>
+  <button type="button" class="btn btn-primary" (click)="addLecture()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let lecture of lectureList">
+      {{lecture}}
+    </li>
+  </ul>
+</div>

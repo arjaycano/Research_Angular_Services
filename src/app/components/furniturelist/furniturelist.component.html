@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Furniture List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Furniture Name" [(ngModel)]="furnitureName"/>
+  <button type="button" class="btn btn-primary" (click)="addFurniture()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let furniture of furnitureList">
+      {{furniture}}
+    </li>
+  </ul>
+</div>

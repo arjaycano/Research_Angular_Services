@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Country List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Country Name" [(ngModel)]="countryName"/>
+  <button type="button" class="btn btn-primary" (click)="addCountry()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let country of countryList">
+      {{country}}
+    </li>
+  </ul>
+</div>

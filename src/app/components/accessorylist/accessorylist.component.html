@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Accessory List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Accessory Name" [(ngModel)]="accessoryName"/>
+  <button type="button" class="btn btn-primary" (click)="addAccessories()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let accessory of accessoryList">
+      {{accessory}}
+    </li>
+  </ul>
+</div>

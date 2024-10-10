@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Laptop Specifications List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Laptop Specification Name" [(ngModel)]="laptopSpecificationName"/>
+  <button type="button" class="btn btn-primary" (click)="addLaptopSpecification()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let laptopSpecification of laptopSpecificationList">
+      {{laptopSpecification}}
+    </li>
+  </ul>
+</div>

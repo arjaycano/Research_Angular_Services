@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Employee List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Employee Name" [(ngModel)]="employeeName"/>
+  <button type="button" class="btn btn-primary" (click)="addEmployee()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let employee of employeeList">
+      {{employee}}
+    </li>
+  </ul>
+</div>

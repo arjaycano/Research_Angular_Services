@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Product List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Product Name" [(ngModel)]="productName"/>
+  <button type="button" class="btn btn-primary" (click)="addProduct()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let product of productList">
+      {{product}}
+    </li>
+  </ul>
+</div>

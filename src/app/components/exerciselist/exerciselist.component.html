@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h1>Exercise List!</h1>
+  <br>
+  <input type="text" placeholder="Enter Exercise Name" [(ngModel)]="exerciseName"/>
+  <button type="button" class="btn btn-primary" (click)="addExercise()">Submit</button>
+  <ul>
+    <br>
+    <li *ngFor="let exercise of exerciseList">
+      {{exercise}}
+    </li>
+  </ul>
+</div>
